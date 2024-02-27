@@ -384,6 +384,13 @@ header .header {
   padding-top: 7rem;
 }
 
+/* hamburger menu */
+[for="hamburgerMenu"],
+#hamburgerMenu {
+  display: none;
+  cursor: pointer;
+}
+
 /* media query for mobile device */
 @media (max-width: 768px) {
   .hero {
@@ -427,5 +434,32 @@ header .header {
 
   .about .myImg {
     width: 70%;
+  }
+
+  /*menu*/
+
+  .menu {
+    /* display: none;*/
+    position: absolute;
+    width: 250px;
+    top: 3.7rem;
+    left: calc(100vw - 250px);
+
+    background: var(--body-bg);
+    height: 100vh;
+    box-shadow: var(--shadow);
+  }
+  .menu .navigation {
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 3rem;
+  }
+
+  [for="hamburgerMenu"] {
+    display: block;
+  }
+
+  #hamburgerMenu:checked + .menu {
+    left: calc(100vm-250px);
   }
 }

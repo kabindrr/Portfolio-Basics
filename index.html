@@ -21,8 +21,15 @@ index.html
       href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
+
     <title>Prem portfolio website</title>
   </head>
   <body>
@@ -40,8 +47,14 @@ index.html
         <div class="header container flex">
           <div class="flex logo">
             <div class="joti-one-regular">Kabindra</div>
-            <div class="line">Full Stack Developer</div>
+            <div>Full Stack Developer</div>
           </div>
+
+          <label for="hamburgerMenu">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" id="hamburgerMenu" />
+
           <div class="menu">
             <ul class="flex navigation">
               <li><a href="#header">Home</a></li>
